@@ -1,0 +1,158 @@
+:root {
+  --header-back-color: rgb(61, 60, 60);
+  --primary-color: rgb(207, 205, 205);
+  --footer-back-color: rgb(61, 204, 240);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  list-style: none;
+  text-decoration: none;
+  font-family: "Lato", sans-serif;
+  font-size: 1rem;
+  border-top: 3px solid black;
+}
+
+.sidebar {
+  position: fixed;
+  height: 85%;
+  width: 40px;
+  background-color: var(--primary-color);
+}
+
+.sidebar ul {
+  text-align: center;
+  height: 100%;
+}
+
+.sidebar li {
+  width: 80%;
+  display: inline-block;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.sidebar li i {
+  color: black;
+  font-weight: bold;
+}
+
+header {
+  height: 30vh;
+  width: 100vw;
+  background-color: var(--header-back-color);
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 200px;
+  width: 200px;
+  margin: 0 60px 0 80px;
+}
+
+.logo img {
+  height: 100%;
+}
+
+.header-content {
+  height: 100%;
+  width: 500px;
+  padding: 40px 0 0 20px;
+  color: #fff;
+}
+
+.header-content h1 {
+  font-size: 1.2rem;
+}
+.header-content p {
+  margin: 0.5rem 0 0.5rem 0;
+  font-size: 0.6rem;
+}
+
+.header-content label {
+  font-size: 0.6rem;
+  position: relative;
+  top: 50px;
+  align-items: center;
+}
+
+.header-content label i {
+  font-size: 0.6rem;
+  padding-right: 6px;
+}
+
+.main {
+  height: 53vh;
+  width: 100vw;
+  padding: 2rem 1rem 2rem 1rem;
+}
+
+.table {
+  width: 95%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  position: relative;
+  left: 3rem;
+  font-size: 0.9rem;
+}
+
+.table tbody tr {
+  height: 2rem;
+  padding: 0 1rem;
+}
+
+.table tbody tr td {
+  width: 25%;
+  padding-left: 0.5rem;
+}
+
+.table tbody tr td:first-child {
+  text-align: left;
+}
+
+.table tbody tr td:last-child {
+  color: blue;
+}
+
+.table tbody tr:nth-child(even) {
+  background: var(--primary-color);
+}
+
+.footer {
+  width: 100vw;
+  height: 15%;
+  display: flex;
+  background-color: var(--footer-back-color);
+  position: fixed;
+  bottom: 0;
+  padding: 0.75rem;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+}
+
+.logo_bottom {
+  height: 85px;
+  width: 15rem;
+}
+
+.footer img {
+  height: 100%;
+}
+
+.footer p {
+  position: relative;
+  top: -75px;
+  left: 90px;
+  line-height: 1.5rem;
+}
+
+.footer-content i {
+  padding-left: 10rem;
+}
